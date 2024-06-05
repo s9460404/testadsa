@@ -26,7 +26,7 @@ const scrapeLogic = async (res) => {
     await page.type('.devsite-search-field', 'automate beyond recorder');
 
     // Wait and click on first result
-    const searchResultSelector = ".search-box__link";
+    const searchResultSelector = '.devsite-result-item-link';
     await page.waitForSelector(searchResultSelector);
     await page.click(searchResultSelector);
 
